@@ -24,6 +24,7 @@ import com.optily.OptimalBudgeting.repo.CampaignRepo;
 import com.optily.OptimalBudgeting.repo.OptimisationRepo;
 import com.optily.OptimalBudgeting.repo.RecommendationRepo;
 
+
 /**
  * @author shaik
  *
@@ -40,9 +41,14 @@ public class FileUploadService {
 	OptimisationRepo optimisationRepo;
 	@Autowired
 	RecommendationRepo recommendationRepo;
+	@Autowired
+	DeleteService deleteService;
 
 	public String upload(MultipartFile file) {
 		try {
+			
+			deleteService.delete();
+			
 			Reader reader = new InputStreamReader(file.getInputStream());
 			BufferedReader br = new BufferedReader(reader);
 			processUpload(br);
@@ -52,17 +58,17 @@ public class FileUploadService {
 		return "0000";
 	}
 
-	private void processUpload(BufferedReader br) {
+	private void processUpload(BufferedReader br) throws Exception {
 
 		List<CampaignGroup> cgList = new ArrayList<CampaignGroup>();
 		List<Campaign> cList = new ArrayList<Campaign>();
 		List<Optimisation> oList = new ArrayList<Optimisation>();
 		List<Recommendation> rList = new ArrayList<Recommendation>();
 
-		int cgid = 0;
-		int cid = 0;
-		int oid = 0;
-		int rid = 0;
+		int cgid = 100;
+		int cid = 200;
+		int oid = 300;
+		int rid = 400;
 
 		String line = "";
 		String splitBy = ",";
@@ -98,7 +104,7 @@ public class FileUploadService {
 						op.setOptimisationId(oid);
 						oid++;
 						op.setCampaignGrpId(cg.getCampaignGrpId());
-						op.setStatus("Not Applied");
+						op.setStatus("");
 						oList.add(op);
 					}
 					if (!cList.stream().anyMatch(o -> o.getName().equals(name))) {
@@ -141,14 +147,13 @@ public class FileUploadService {
 						rec.setRecommendationId(rid);
 						rid++;
 						rList.add(rec);
-
 					}
 
 				}
 			}
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		} catch (Exception e) {
+			System.out.println("Error while uploading the Campaign file.." + e);
+			throw e;
 		}
 		campaignGroupRepo.saveAll(cgList);
 		campaignRepo.saveAll(cList);

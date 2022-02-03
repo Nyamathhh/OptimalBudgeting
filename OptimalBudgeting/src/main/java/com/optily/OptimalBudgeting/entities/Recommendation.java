@@ -27,7 +27,7 @@ public class Recommendation {
 	private BigDecimal recommendationBudget;
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "recommendationId", nullable = false, length = 50)
 	public int getRecommendationId() {
 		return recommendationId;

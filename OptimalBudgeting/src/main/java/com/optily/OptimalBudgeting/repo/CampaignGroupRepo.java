@@ -17,6 +17,5 @@ import com.optily.OptimalBudgeting.entities.CampaignGroup;
 @Repository
 public interface CampaignGroupRepo extends JpaRepository<CampaignGroup, Integer> {
 
-	public List<CampaignGroup> findByName(String name);
-	
+	public CampaignGroup findByName(String name);
 }

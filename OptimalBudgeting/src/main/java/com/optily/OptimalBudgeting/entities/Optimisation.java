@@ -25,7 +25,7 @@ public class Optimisation {
 	private String status;
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name ="optimisationId", nullable = false, length = 50)
 	public int getOptimisationId() {
 		return optimisationId;

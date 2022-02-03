@@ -49,7 +49,7 @@ public class Campaign {
 	}
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id", nullable = false, length = 100)
 	public int getCampaignId() {
 		return campaignId;

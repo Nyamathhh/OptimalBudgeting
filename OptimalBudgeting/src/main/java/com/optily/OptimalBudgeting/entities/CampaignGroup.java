@@ -24,7 +24,7 @@ public class CampaignGroup {
 	private String name;
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name ="id", nullable = false, length = 50)
 	public int getCampaignGrpId() {
 		return campaignGrpId;

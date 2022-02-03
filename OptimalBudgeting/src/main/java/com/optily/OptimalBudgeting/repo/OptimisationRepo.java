@@ -18,5 +18,7 @@ import com.optily.OptimalBudgeting.entities.Optimisation;
 public interface OptimisationRepo extends JpaRepository<Optimisation, Integer> {
 	
 	public List<Optimisation> findByCampaignGrpId(int campaignGrpId);
+	public Optimisation findByOptimisationId(int optId);
+	
 	
 }
