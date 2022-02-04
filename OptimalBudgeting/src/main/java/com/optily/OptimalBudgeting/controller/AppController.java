@@ -123,8 +123,8 @@ public class AppController {
 		return recommendationService.getAllRecomByOptimisation(optId);
 	}
 	
-	@RequestMapping(value="apply/optimisations/{optimisationId}", method = RequestMethod.PUT)
-	public OptilyResponse applyOptimisation(@PathVariable(name ="optimisationId") int id, @RequestBody Optimisation optimisation) {
+	@RequestMapping(value="apply/optimisations", method = RequestMethod.PUT)
+	public OptilyResponse applyOptimisation(@RequestBody Optimisation optimisation) {
 		String responseCode = Constants.FAILURE;
 		responseCode = optimisationService.apply(optimisation);
 		

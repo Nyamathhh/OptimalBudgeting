@@ -11,8 +11,8 @@ import com.optily.OptimalBudgeting.repo.CampaignRepo;
 import com.optily.OptimalBudgeting.repo.OptimisationRepo;
 import com.optily.OptimalBudgeting.repo.RecommendationRepo;
 
-import jakarta.persistence.EntityManager;
-import jakarta.transaction.Transactional;
+import javax.persistence.EntityManager;
+import javax.transaction.Transactional;
 
 /**
  * @author shaik
