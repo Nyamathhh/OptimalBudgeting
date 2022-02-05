@@ -101,9 +101,9 @@ This section lists out all the required Technologies & Frameworks used to build 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-You can run the application by running runMe.bat on Windows only. however, you can modify it to .sh accordingly to run the same. 
+You can run the application by running runMe.bat on Windows. However, you can modify it to .sh accordingly to run the same. 
 
-But running please follow the below steps:
+But before running please follow the below steps:
 
 ```sh
 * Create a file localH2.mv in C:/Users/{username} folder 
