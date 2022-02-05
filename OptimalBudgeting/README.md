@@ -143,7 +143,9 @@ Once the above steps are complete, you are good to run runMe.bat file. The file 
 
 This section will help you understand how to use the list of provided APIs 
 
-<h3 1. /optily/file/upload</h3>
+
+1. /optily/file/upload
+
 
 is a POST request takes a multiPartfile as an input, with Name, Budget and Impression details in CSV format.
 
@@ -153,72 +155,108 @@ http://localhost:8080/optily/file/upload
 
 <img src="images/upload.jpg" alt="File upload" width="800" height="800">
 
+
+
 2. /optily/campaigngroups
 
+
 is a GET request that returns list of campaigngroups in a JSON format.
+
 
 ```sh
 http://localhost:8080/optily/campaigngroups
 ```
 
+
 <img src="images/getCampaignGroups.jpg" alt="Get Campaign groups" width="800" height="800">
+
+
 
 3. /optily/campaigns
 
+
 is a GET request that returns list of campaigns in a JSON format.
+
 
 ```sh
 http://localhost:8080/optily/campaigns
 ```
 
+
 <img src="images/getCampaigns.jpg" alt="Get Campaigns" width="800" height="800">
+
 
 
 4. /optily/campaigns/{campaignGrp}
 
+
 is a GET request that takes campaignGrp as an input and returns list of campaigns belonging at a {campaignGrp in a JSON format.
+
 
 ```sh
 http://localhost:8080/optily/campaigns/A_CV_SHP
 ```
 
+
 <img src="images/getCampaignCG.jpg" alt="Get Campaigns belonging to a Group" width="800" height="800">
+
+
 
 5. /optily/optimisations/{campaignGrp}
 
+
 is a GET request that takes campaignGrp as an input and returns list of optimisations belonging at a {campaignGrp} in a JSON format.
+
+
 
 ```sh
 http://localhost:8080/optily/optimisations/A_CV_SHP
 ```
 
+
 <img src="images/getOptimisationsCG.jpg" alt="Get Optimisations belonging to a Group" width="800" height="800">
+
+
 
 6. /optily/recommendations/{optimisationId}
 
+
 is a GET request that takes optimisationId as an input and returns list of recommendations belonging at a {optimisationId} in a JSON format.
+
 
 ```sh
 http://localhost:8080/optily/recommendations/303
 ```
 
+
 <img src="images/getRecomms.jpg" alt="Get Recommendations" width="800" height="800">
+
+
 
 7. /optily/apply/optimisations
 
+
 is a PUT request that takes optimisation Json as an input and returns an Response if the optimisation is applied successfully or not in a JSON format.
+
+
 
 ```sh
 http://localhost:8080/optily/apply/optimisations
 ```
 
+
+
 <img src="images/applyOptimisations.jpg" alt="Apply Optimisations" width="800" height="800">
+
+
 
 ```sh
 All the applied optimisations are deleted from Recommendations and will not be shown up.
 ```
 
+
 <img src="images/getRecommendations.jpg" alt="Get Recommendations" width="800" height="800">
+
 
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
