@@ -202,7 +202,7 @@ is a GET request that takes optimisationId as an input and returns list of recom
 http://localhost:8080/optily/recommendations/303
 ```
 
-<img src="images/getRecommendations.jpg" alt="Get Recommendations" width="800" height="800">
+<img src="images/getRecomms.jpg" alt="Get Recommendations" width="800" height="800">
 
 7. /optily/apply/optimisations
 
@@ -213,6 +213,12 @@ http://localhost:8080/optily/apply/optimisations
 ```
 
 <img src="images/applyOptimisations.jpg" alt="Apply Optimisations" width="800" height="800">
+
+```sh
+All the applied optimisations are deleted from Recommendations and will not be shown up.
+```
+
+<img src="images/getRecommendations.jpg" alt="Get Recommendations" width="800" height="800">
 
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
