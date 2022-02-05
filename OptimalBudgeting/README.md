@@ -161,7 +161,7 @@ is a GET request that returns list of campaigngroups in a JSON format.
 http://localhost:8080/optily/campaigngroups
 ```
 
-	<img src="images/getCampaignGroups.jpg" alt="Get Campaign groups" width="800" height="800">
+<img src="images/getCampaignGroups.jpg" alt="Get Campaign groups" width="800" height="800">
 
 3. /optily/campaigns
 
@@ -171,7 +171,7 @@ is a GET request that returns list of campaigns in a JSON format.
 http://localhost:8080/optily/campaigns
 ```
 
-	<img src="images/getCampaigns.jpg" alt="Get Campaigns" width="800" height="800">
+<img src="images/getCampaigns.jpg" alt="Get Campaigns" width="800" height="800">
 
 
 4. /optily/campaigns/{campaignGrp}
@@ -182,7 +182,7 @@ is a GET request that takes campaignGrp as an input and returns list of campaign
 http://localhost:8080/optily/campaigns/A_CV_SHP
 ```
 
-	<img src="images/getCampaignCG.jpg" alt="Get Campaigns belonging to a Group" width="800" height="800">
+<img src="images/getCampaignCG.jpg" alt="Get Campaigns belonging to a Group" width="800" height="800">
 
 5. /optily/optimisations/{campaignGrp}
 
@@ -192,7 +192,7 @@ is a GET request that takes campaignGrp as an input and returns list of optimisa
 http://localhost:8080/optily/optimisations/A_CV_SHP
 ```
 
-	<img src="images/getOptimisationsCG.jpg" alt="Get Optimisations belonging to a Group" width="800" height="800">
+<img src="images/getOptimisationsCG.jpg" alt="Get Optimisations belonging to a Group" width="800" height="800">
 
 6. /optily/recommendations/{optimisationId}
 
@@ -202,7 +202,7 @@ is a GET request that takes optimisationId as an input and returns list of recom
 http://localhost:8080/optily/recommendations/303
 ```
 
-	<img src="images/getRecommendations.jpg" alt="Get Recommendations" width="800" height="800">
+<img src="images/getRecommendations.jpg" alt="Get Recommendations" width="800" height="800">
 
 7. /optily/apply/optimisations
 
@@ -212,13 +212,7 @@ is a PUT request that takes optimisation Json as an input and returns an Respons
 http://localhost:8080/optily/apply/optimisations
 ```
 
-	<img src="images/applyOptimisations.jpg" alt="Apply Optimisations" width="800" height="800">
-
-
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+<img src="images/applyOptimisations.jpg" alt="Apply Optimisations" width="800" height="800">
 
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
