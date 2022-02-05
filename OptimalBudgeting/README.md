@@ -143,7 +143,7 @@ Once the above steps are complete, you are good to run runMe.bat file. The file 
 
 This section will help you understand how to use the list of provided APIs 
 
-1. /optily/file/upload
+<h3 1. /optily/file/upload</h3>
 
 is a POST request takes a multiPartfile as an input, with Name, Budget and Impression details in CSV format.
 
