@@ -117,18 +117,18 @@ Once the above steps are complete, you are good to run runMe.bat file. The file 
 * It opens up 2 windows in your default browser.
 	1. H2 database connection
 
-	<img src="images/H2Console.jpg" alt="H2 Console" width="800" height="800">
+	<img src="OptimalBudgeting/images/H2Console.jpg" alt="H2 Console" width="800" height="800">
 
 
 	2. Swagger entry point, listing all the available APIs.
 
-	<img src="images/SwaggerConf.jpg" alt="Swagger Configuration" width="800" height="800">
+	<img src="OptimalBudgeting/images/SwaggerConf.jpg" alt="Swagger Configuration" width="800" height="800">
 
 * Before connecting to H2 database, Please make sure to enter the JDBC URL correctly as below
 	* jdbc:h2:~/localH2
 	* please keep the rest as it is and Connect. 
 
-	<img src="images/H2Console.jpg" alt="H2 Console" width="800" height="800">
+	<img src="OptimalBudgeting/images/H2Console.jpg" alt="H2 Console" width="800" height="800">
 
 
 * Once connected, you will have create a default Schema "Optily" as below:
@@ -153,7 +153,7 @@ is a POST request takes a multiPartfile as an input, with Name, Budget and Impre
 http://localhost:8080/optily/file/upload
 ```
 
-<img src="images/upload.jpg" alt="File upload" width="800" height="800">
+<img src="OptimalBudgeting/images/upload.jpg" alt="File upload" width="800" height="800">
 
 
 
@@ -168,7 +168,7 @@ http://localhost:8080/optily/campaigngroups
 ```
 
 
-<img src="images/getCampaignGroups.jpg" alt="Get Campaign groups" width="800" height="800">
+<img src="OptimalBudgeting/images/getCampaignGroups.jpg" alt="Get Campaign groups" width="800" height="800">
 
 
 
@@ -183,7 +183,7 @@ http://localhost:8080/optily/campaigns
 ```
 
 
-<img src="images/getCampaigns.jpg" alt="Get Campaigns" width="800" height="800">
+<img src="OptimalBudgeting/images/getCampaigns.jpg" alt="Get Campaigns" width="800" height="800">
 
 
 
@@ -198,7 +198,7 @@ http://localhost:8080/optily/campaigns/A_CV_SHP
 ```
 
 
-<img src="images/getCampaignCG.jpg" alt="Get Campaigns belonging to a Group" width="800" height="800">
+<img src="OptimalBudgeting/images/getCampaignCG.jpg" alt="Get Campaigns belonging to a Group" width="800" height="800">
 
 
 
@@ -214,7 +214,7 @@ http://localhost:8080/optily/optimisations/A_CV_SHP
 ```
 
 
-<img src="images/getOptimisationsCG.jpg" alt="Get Optimisations belonging to a Group" width="800" height="800">
+<img src="OptimalBudgeting/images/getOptimisationsCG.jpg" alt="Get Optimisations belonging to a Group" width="800" height="800">
 
 
 
@@ -229,7 +229,7 @@ http://localhost:8080/optily/recommendations/303
 ```
 
 
-<img src="images/getRecomms.jpg" alt="Get Recommendations" width="800" height="800">
+<img src="OptimalBudgeting/images/getRecomms.jpg" alt="Get Recommendations" width="800" height="800">
 
 
 
@@ -246,7 +246,7 @@ http://localhost:8080/optily/apply/optimisations
 
 
 
-<img src="images/applyOptimisations.jpg" alt="Apply Optimisations" width="800" height="800">
+<img src="OptimalBudgeting/images/applyOptimisations.jpg" alt="Apply Optimisations" width="800" height="800">
 
 
 
@@ -255,7 +255,7 @@ All the applied optimisations are deleted from Recommendations and will not be s
 ```
 
 
-<img src="images/getRecommendations.jpg" alt="Get Recommendations" width="800" height="800">
+<img src="OptimalBudgeting/images/getRecommendations.jpg" alt="Get Recommendations" width="800" height="800">
 
 
 
