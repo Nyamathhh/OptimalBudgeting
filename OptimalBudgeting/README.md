@@ -1,10 +1,5 @@
 <div id="top"></div>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <div align="center">
@@ -58,7 +53,9 @@ A group of 5 campaigns each have a budget of €20 per week.
 * Campaign 3 budget: 20
 * Campaign 4 budget: 20
 * Campaign 5 budget: 20
+
 The impressions per campaign are as follows:
+
 * Campaign 1 impressions: 100
 * Campaign 2 impressions: 200
 * Campaign 3 impressions: 400
@@ -72,7 +69,11 @@ So then with impressions as the criteria of success, then budgets are distribute
 which campaigns perform better.
 So, for example, the recommended budget allocation based on the impressions would be as
 follows:
+
+```sh 
 Budgets[x] = (Impressions[x] / sum(impressions)) * sum(budgets)
+```
+
 So the new budget allocations based on the recommendations made by the optimisation system
 would be as follows:
 
@@ -112,9 +113,11 @@ You can run the application by running runMe.bat on Windows only. however, you c
 
 But running please follow the below steps:
 
+```sh
 * Create a file localH2.mv in C:/Users/{username} folder 
 * Copy h2-1.4.200.jar to C:/Optily/bin
 * Copy OptimalBudgeting-0.0.1-SNAPSHOT.jar to C:/Optily/bin
+```
 
 Once the above steps are complete, you are good to run runMe.bat file. The file will do the following:
 
@@ -127,19 +130,21 @@ Once the above steps are complete, you are good to run runMe.bat file. The file 
 
 	2. Swagger entry point, listing all the available APIs.
 
-	<img src="images/SwaggerConf.JPG" alt="Swagger Configuration" width="80" height="80">
+	<img src="images/SwaggerConf.jpg" alt="Swagger Configuration" width="80" height="80">
 
 * Before connecting to H2 database, Please make sure to enter the JDBC URL correctly as below
 	* jdbc:h2:~/localH2
 	* please keep the rest as it is and Connect. 
 
-	<img src="images/H2Console.JPG" alt="H2 Console" width="80" height="80">
+	<img src="images/H2Console.jpg" alt="H2 Console" width="80" height="80">
 
 
 * Once connected, you will have create a default Schema "Optily" as below:
+
 	```sh 
 	Create Schema Optily` 
 	```
+
 * Great, You are now ready to use the application. 
 
 ### Guidelines
@@ -257,18 +262,5 @@ Use this space to list resources you find helpful and would like to give credit 
 
 
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[linkedin-url]: https://www.linkedin.com/in/nyamath/
