@@ -151,7 +151,7 @@ is a POST request takes a multiPartfile as an input, with Name, Budget and Impre
 http://localhost:8080/optily/file/upload
 ```
 
-	<img src="images/upload.jpg" alt="File upload" width="800" height="800">
+<img src="images/upload.jpg" alt="File upload" width="800" height="800">
 
 2. /optily/campaigngroups
 
